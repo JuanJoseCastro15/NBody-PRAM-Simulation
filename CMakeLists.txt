@@ -19,3 +19,6 @@ target_include_directories(nbody INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 add_executable(demo test/demo.cu)
 target_link_libraries(demo PRIVATE nbody)
+
+add_executable(stream src/stream.cu)
+target_link_libraries(stream PRIVATE nbody)
